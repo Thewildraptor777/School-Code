@@ -1,0 +1,1 @@
+test||god||& c:/users/thewi/appdata/local/microsoft/windowsapps/python3.11.exe "c:/code/repos/school code/python/machine-learning/chat/training.py"||$
