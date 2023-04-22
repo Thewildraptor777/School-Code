@@ -11,9 +11,9 @@
 <body>
     <?php
     include "file.php";
-    writeFileData("test.txt", "higfii||tset||");   
-    $list= readFileData("test.txt");
-readAllObjects($list);
+    writeFileData("test.txt", "higfii||tset||");
+    $list = readFileData("test.txt");
+    readAllObjects($list);
     ?>
 </body>
 

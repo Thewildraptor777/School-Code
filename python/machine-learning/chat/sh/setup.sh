@@ -13,4 +13,3 @@ echo ""
 echo ""
 echo "---------------"
 python
-clear
