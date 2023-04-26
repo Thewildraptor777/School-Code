@@ -13,7 +13,7 @@ if (short == 5500) {
 }
 if (short == 4000) {
     if (localStorage.getItem("password") != "Tyler") {
-        window.location.replace(`${Url}/php/www/login.php`)
+        window.location.replace(`${Url}My-Sites/php/www/login.php`)
         pass();
     }
 }
