@@ -6,22 +6,24 @@
     <title>Button Animation Example</title>
     <style>
         button {
+            width: 10vw;
+            align-items: center;
             font-size: 24px;
-            padding: 12px 24px;
-            background-color: #4CAF50;
+            padding: .9%;
+            background-color: lightgrey;
             color: white;
             border: none;
-            border-radius: 4px;
             cursor: pointer;
+            border-radius: 10%;
         }
 
         button.animateOff {
-            animation: myAnimationOff 1s;
+            animation: myAnimationOff .5s;
         }
 
         @keyframes myAnimationOff {
             0% {
-                background-color: light
+                background-color: rgb(75, 161, 189)
             }
 
             100% {
@@ -30,7 +32,7 @@
         }
 
         button.animateOn {
-            animation: myAnimationOn 1s;
+            animation: myAnimationOn .5s;
         }
 
         @keyframes myAnimationOn {
@@ -39,18 +41,24 @@
             }
 
             100% {
-                background-color: light
+                background-color: rgb(75, 161, 189)
             }
         }
     </style>
 </head>
 
-<body>
-    <button id="myButton">Click me!</button>
-    <p></p>
+<body id="body">
+
     <script>
+        function createContent(type, content, id, parentElementId) {
+            element = document.createElement(type)
+            element.innerHTML = content;
+            element.setAttribute("id", id)
+            document.getElementById(parentElementId).appendChild(element)
+        }
+        createContent('button', "off", "myButton", "body");
         const myButton = document.getElementById('myButton');
-        let state = null;
+        let state = "off";
         let time = "ready"
         myButton.addEventListener('click', () => {
             if (time == "ready") {
@@ -67,7 +75,7 @@
                 }
                 else {
                     state = "on";
-                    myButton.style.backgroundColor = "lightblue";
+                    myButton.style.backgroundColor = "rgb(75, 161, 189)";
                     myButton.classList.add('animateOn');
                     myButton.innerHTML = "on"
                     // Remove the class after the animation completes

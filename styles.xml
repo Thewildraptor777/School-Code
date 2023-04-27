@@ -1,0 +1,36 @@
+<?xml version="1." encoding="UTF-8"?>
+<styles>
+  <buttonStyle name="default">
+    <property name="width">10vw</property>
+    <property name="align-items">center</property>
+    <property name="font-size">24px</property>
+    <property name="padding">.9%</property>
+    <property name="background-color">lightgrey</property>
+    <property name="color">white</property>
+    <property name="border">none</property>
+    <property name="cursor">pointer</property>
+    <property name="border-radius">10%</property>
+  </buttonStyle>
+  <buttonStyle name="animateOff">
+    <property name="animation">myAnimationOff .5s</property>
+  </buttonStyle>
+  <keyframes name="myAnimationOff">
+    <frame percentage="%">
+      <property name="background-color">rgb(75, 161, 189)</property>
+    </frame>
+    <frame percentage="100%">
+      <property name="background-color">lightgrey</property>
+    </frame>
+  </keyframes>
+  <buttonStyle name="animateOn">
+    <property name="animation">myAnimationOn .5s</property>
+  </buttonStyle>
+  <keyframes name="myAnimationOn">
+    <frame percentage="%">
+      <property name="background-color">lightgrey</property>
+    </frame>
+    <frame percentage="100%">
+      <property name="background-color">rgb(75, 161, 189)</property>
+    </frame>
+  </keyframes>
+</styles>
