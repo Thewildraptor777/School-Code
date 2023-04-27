@@ -1,5 +1,5 @@
 import subprocess
-subdir = "/workspace/python/machine-learning/chat/sh/"
+subdir = "machine-learning/chat/sh/"
 
 
 def shFile(pathname):

@@ -1,4 +1,8 @@
 clear
+pip install nltk
+pip install numpy
+pip install tensorflow
+echo ""
 echo "copy and paste these into python interpreter"
 echo "---------------"
 echo "import nltk"
@@ -9,7 +13,6 @@ echo "d"
 echo "wordnet"
 echo "q"
 echo "quit()"
-echo ""
 echo ""
 echo "---------------"
 python

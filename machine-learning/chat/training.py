@@ -13,7 +13,7 @@ setup.shFile("clear.sh")
 ###
 lemmitizer = WordNetLemmatizer()
 intents = json.loads(
-    open("/workspace/python/machine-learning/chat/intents.json").read())
+    open("machine-learning/chat/intents.json").read())
 words = []
 classes = []
 documents = []
@@ -30,9 +30,9 @@ words = [lemmitizer.lemmatize(word)
 words = sorted(set(words))
 classes = sorted(classes)
 pickle.dump(words, open(
-    '/workspace/python/machine-learning/chat/data/words.pkl', 'wb'))
+    'machine-learning/chat/data/words.pkl', 'wb'))
 pickle.dump(classes, open(
-    '/workspace/python/machine-learning/chat/data/classes.pkl', 'wb'))
+    'machine-learning/chat/data/classes.pkl', 'wb'))
 
 setup.shFile("clear.sh")
 print(words)
