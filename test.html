@@ -21,11 +21,11 @@
 
         @keyframes myAnimationOff {
             0% {
-                background-color: white
+                background-color: light
             }
 
             100% {
-                background-color: red
+                background-color: lightgrey
             }
         }
 
@@ -35,11 +35,11 @@
 
         @keyframes myAnimationOn {
             0% {
-                background-color: white
+                background-color: lightgrey
             }
 
             100% {
-                background-color: blue
+                background-color: light
             }
         }
     </style>
@@ -57,7 +57,7 @@
                 time = "not"
                 if (state != "off") {
                     state = "off";
-                    myButton.style.backgroundColor = "red";
+                    myButton.style.backgroundColor = "lightgrey";
                     myButton.classList.add('animateOff');
                     myButton.innerHTML = "off"
                     // Remove the class after the animation completes
@@ -67,7 +67,7 @@
                 }
                 else {
                     state = "on";
-                    myButton.style.backgroundColor = "blue";
+                    myButton.style.backgroundColor = "lightblue";
                     myButton.classList.add('animateOn');
                     myButton.innerHTML = "on"
                     // Remove the class after the animation completes
