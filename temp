@@ -1,0 +1,9 @@
+ofstream MyFile(pathname);
+
+    // Write to the file
+    MyFile << data;
+
+    // Close the file
+    MyFile.close();
+    ////
+           cout << "file exists\n";
