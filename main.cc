@@ -9,8 +9,9 @@ void runFunction(){
     cout<< "hi "+name+"\n";
 }
 int main() 
-{
+{    cout<<"\nstarted\n\n";
 
-    createDataFile("text.txt","hi");
+    cout<<readDataFileAsWhole("text.txt");
+    
     return 0;
 }
