@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Button Animation</title>
+    <style>
+        button {
+            width: 5vw;
+            align-items: center;
+            font-size: 24px;
+            padding: .2%;
+            background-color: lightgrey;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 20%;
+        }
+
+        button.animateOff {
+            animation: myAnimationOff .5s;
+        }
+
+        @keyframes myAnimationOff {
+            0% {
+                background-color: rgb(75, 161, 189)
+            }
+
+            100% {
+                background-color: lightgrey
+            }
+        }
+
+        button.animateOn {
+            animation: myAnimationOn .5s;
+        }
+
+        @keyframes myAnimationOn {
+            0% {
+                background-color: lightgrey
+            }
+
+            100% {
+                background-color: rgb(75, 161, 189)
+            }
+        }
+    </style>
+</head>
+
+<body id="body">
+
+    <script>
+        function createContent(type, content, id, parentElementId) {
+            element = document.createElement(type)
+            element.innerHTML = content;
+            element.setAttribute("id", id)
+            document.getElementById(parentElementId).appendChild(element)
+        }
+        createContent('button', "off", "myButton", "body");
+        const myButton = document.getElementById('myButton');
+        let state = "off";
+        let time = "ready"
+        myButton.addEventListener('click', () => {
+            if (time == "ready") {
+                time = "not"
+                if (state != "off") {
+                    state = "off";
+                    myButton.style.backgroundColor = "lightgrey";
+                    myButton.classList.add('animateOff');
+                    myButton.innerHTML = "off"
+                    // Remove the class after the animation completes
+                    setTimeout(() => {
+                        myButton.classList.remove('animateOff');
+                    }, 500);
+                }
+                else {
+                    state = "on";
+                    myButton.style.backgroundColor = "rgb(75, 161, 189)";
+                    myButton.classList.add('animateOn');
+                    myButton.innerHTML = "on"
+                    // Remove the class after the animation completes
+                    setTimeout(() => {
+                        myButton.classList.remove('animateOn');
+                    }, 500);
+                }
+                setTimeout(function () {
+                    // code to be executed after 1 second
+                    time = "ready"
+                }, 500);
+            }
+        });
+    </script>
+</body>
+
+</html>
