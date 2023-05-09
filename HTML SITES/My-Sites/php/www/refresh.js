@@ -1,0 +1,1 @@
+window.location.replace("../../Homepage/index.html");
