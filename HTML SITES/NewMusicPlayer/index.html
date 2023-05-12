@@ -7,31 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Music Player</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fb27aa5521.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <section id="playlist-section">
-        playlist selection
+        <p>playlist selection</p>
 
     </section>
+    <section id="playlist-songs">
+        <h1 class="tracks-header">
+            Songs:</h1>
+        <p class="tracks-header" id="total-songs">total number of song in playlist</p>
+        <ul id="playlist-tracks">
+
+        </ul>
+    </section>
     <section id="music-section">
-        <p class="music_p">Title: <span id="music_title">temp</span></p>
+        <div id="music-info">
+            <p class="music-p">Title: <span id="music-title">temp</span></p>
 
-        <p class="music_p"> Length: <span id="music_length">temp</span></p>
-
-
-        <p class="music_p"> Artist: <span id="music_artist">temp</span></p>
+            <p class="music-p"> Length: <span id="music-length">temp</span></p>
 
 
-        <p class="music_p"> Album: <span id="music_album">temp</span></p>
+            <p class="music-p"> Artist: <span id="music-artist">temp</span></p>
 
-        <section id="controls-section">
-            <button>play</button>
-            <button>pause</button>
-            <button>shuffle</buttton>
-        </section>
+
+            <p class="music-p"> Album: <span id="music-album">temp</span></p>
+        </div>
+        <div>
+            <section id="controls-section">
+                <section id="main-button">
+                    <div id="play-button-div">
+                        <button id="play-button" class="buttons"><i class='fa-solid fa-play'></i></button>
+                    </div>
+                    <div class="clear" id="pause-button-div">
+                        <button id="pause-button" class="buttons"><i class="fa-solid fa-pause"></i></button>
+                    </div>
+                </section>
+                <div class="spacer">
+                <button id="shuffle-button" class="buttons"><i id="shuffle-icon" class="fa-solid fa-shuffle"></i></button></div>
+            </section>
+        </div>
     </section>
 
 </body>
+<script src="script.js"></script>
 
 </html>

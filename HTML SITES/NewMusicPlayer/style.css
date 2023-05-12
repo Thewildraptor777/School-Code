@@ -17,20 +17,72 @@ body {
     position: fixed;
     bottom: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: rgb(231, 66, 66);
     height: 25vh;
-    width: 50vw;
-    justify-content: center;
+    width: 100vw;
+    justify-content: flex-start;
     overflow: hidden;
 }
 
-.music_p {
+
+#music-info {
+    min-width: 10vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.music-p {
     margin: 1%;
 }
-button{
+
+#controls-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons {
     margin: 1%;
-    padding: .30%;
+    padding: .5%;
     border: 0;
     border-radius: 10%;
+    font-size: large;
+    width: 4vw;
+    height: 4vh;
+    overflow: hidden;
+   
+}
+
+#playlist-songs {
+
+    position: absolute;
+    bottom: 25vh;
+    background-color: lightblue;
+    height: 65vh;
+    width: 100vw;
+}
+
+.tracks-header {
+    margin: 1%;
+}
+
+#playlist-section p {
+    margin: 1%;
+}
+
+#playlist-tracks {
+    height: 100%;
+    overflow-x: scroll;
+}
+
+.clear {
+    display: none;
+}
+
+#main-button,
+.spacer {
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
