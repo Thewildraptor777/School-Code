@@ -1,6 +1,5 @@
 const tracksList = document.getElementById("playlist-tracks");
-const tracks = tracksList.getElementsByTagName("li");
-const total = document.getElementById("total-songs");
+const tracks = tracksList.getElementsByTagName("li");const total = document.getElementById("total-songs");
 const playButtonDiv = document.getElementById("play-button-div"); const pauseButtonDiv = document.getElementById("pause-button-div");
 const playButton = document.getElementById("play-button"); const pauseButton = document.getElementById("pause-button");
 

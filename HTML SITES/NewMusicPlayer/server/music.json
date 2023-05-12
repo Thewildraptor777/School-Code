@@ -1,0 +1,48 @@
+{
+    "music": [
+        {
+            "playlist-name": "1",
+            "playlist": [
+                {
+                    "track": [
+                        {
+                            "title": "Song 1",
+                            "audio": "song1.mp3",
+                            "image": "song1.jpg",
+                            "artist": "Artist 1"
+                        },
+                        {
+                            "title": "Song 2",
+                            "audio": "song2.mp3",
+                            "image": "song2.jpg",
+                            "artist": "Artist 2"
+                        }
+                    ]
+                }
+            ]
+        },{
+            "playlist-name":"2",
+            "playlist":[
+              {  "track": [
+                    {
+                        "title": "Song 3",
+                        "audio": "song3.mp3",
+                        "image": "song3.jpg",
+                        "artist": "Artist 3"
+                    }, {
+                        "title": "Song 3",
+                        "audio": "song3.mp3",
+                        "image": "song3.jpg",
+                        "artist": "Artist 3"
+                    },
+                    {
+                        "title": "Song 4",
+                        "audio": "song4.mp3",
+                        "image": "song4.jpg",
+                        "artist": "Artist 4"
+                    }
+                ]}
+            ]
+        }
+    ]
+}
