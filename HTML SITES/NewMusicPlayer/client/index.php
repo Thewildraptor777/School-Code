@@ -25,15 +25,25 @@
     </section>
     <section id="music-section">
         <div id="music-info">
-            <p class="music-p">Title: <span id="music-title">temp</span></p>
+            <p class="music-p">Title: <?php
+                                        include '../server/song.php';
+                                        echo $name;
+                                        ?>
+            </p>
 
-            <p class="music-p"> Length: <span id="music-length">temp</span></p>
+            <p class="music-p"> Length: <?php include '../server/song.php';
+                                        echo $name." jnjn";
+                                        ?></p>
 
 
-            <p class="music-p"> Artist: <span id="music-artist">temp</span></p>
+            <p class="music-p"> Artist: <?php include '../server/song.php';
+                                        echo $artist;
+                                        ?></p>
 
 
-            <p class="music-p"> Album: <span id="music-album">temp</span></p>
+            <p class="music-p"> Album: <?php include '../server/song.php';
+                                        echo $audio;
+                                        ?></p>
         </div>
         <div>
             <section id="controls-section">
@@ -46,8 +56,7 @@
                     </div>
                 </section>
                 <div class="spacer">
-                    <button id="shuffle-button" class="buttons"><i id="shuffle-icon"
-                            class="fa-solid fa-shuffle"></i></button>
+                    <button id="shuffle-button" class="buttons"><i id="shuffle-icon" class="fa-solid fa-shuffle"></i></button>
                 </div>
             </section>
         </div>
