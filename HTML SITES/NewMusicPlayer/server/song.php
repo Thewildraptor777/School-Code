@@ -1,8 +1,8 @@
 <?php
 require 'playlist.php';
 //$music["playlists"][0]["tracks"][0]["name"]
-
-$playlist = $music['playlists'][0];
+$index=1;
+$playlist = $music['playlists'][$index];
 $playlistLength = count($playlist["tracks"]);if (!function_exists('songs')) {
     function songs($playlist, $length)
     {
