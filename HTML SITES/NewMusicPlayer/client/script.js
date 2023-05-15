@@ -3,9 +3,6 @@ const tracks = tracksList.getElementsByTagName("li");const total = document.getE
 const playButtonDiv = document.getElementById("play-button-div"); const pauseButtonDiv = document.getElementById("pause-button-div");
 const playButton = document.getElementById("play-button"); const pauseButton = document.getElementById("pause-button");
 
-let totaltracks = tracks.length;
-
-total.innerHTML = total.innerHTML + " " + totaltracks
 playButton.addEventListener("click", () => {
     pauseButtonDiv.classList.remove("clear")
     playButtonDiv.classList.add("clear")

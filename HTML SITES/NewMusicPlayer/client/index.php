@@ -17,33 +17,31 @@
     </section>
     <section id="playlist-songs">
         <h1 class="tracks-header">
-            Songs:</h1>
-        <p class="tracks-header" id="total-songs">total number of song in playlist</p>
+            <?php
+            require '../server/song.php' ;
+            echo $playlist['name'];
+            ?></h1>
+        <p class="tracks-header" id="total-songs">total number of songs:
+            <?php 
+        require'../server/song.php';
+        echo $playlistLength;
+        ?></p>
         <div id="playlist-container">
-            <ul id="playlist-tracks"></ul>
+            <ul id="playlist-tracks"><?php echo songs($playlist,$playlistLength) ?></ul>
         </div>
     </section>
     <section id="music-section">
         <div id="music-info">
-            <p class="music-p">Title: <?php
-                                        include '../server/song.php';
-                                        echo $name;
-                                        ?>
+            <p class="music-p">Title: 
             </p>
 
-            <p class="music-p"> Length: <?php include '../server/song.php';
-                                        echo $name." jnjn";
-                                        ?></p>
+            <p class="music-p"> Length:</p>
 
 
-            <p class="music-p"> Artist: <?php include '../server/song.php';
-                                        echo $artist;
-                                        ?></p>
+            <p class="music-p"> Artist: </p>
 
 
-            <p class="music-p"> Album: <?php include '../server/song.php';
-                                        echo $audio;
-                                        ?></p>
+            <p class="music-p"> Playlist:</p>
         </div>
         <div>
             <section id="controls-section">
