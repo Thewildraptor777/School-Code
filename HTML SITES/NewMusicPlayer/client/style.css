@@ -73,7 +73,7 @@ body {
 
 #playlist-tracks {
     height: 100%;
-    overflow-x: scroll;
+    overflow: hidden;
 }
 
 .clear {
@@ -85,4 +85,8 @@ body {
     margin-top: 5%;
     margin-left: 2%;
     margin-right: 2%;
+}
+#playlist-container{
+    overflow-x: scroll;
+    height: 100%;
 }

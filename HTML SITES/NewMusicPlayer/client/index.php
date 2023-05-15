@@ -17,22 +17,16 @@
     </section>
     <section id="playlist-songs">
         <h1 class="tracks-header">
-            <?php
-            require '../server/song.php' ;
-            echo $playlist['name'];
-            ?></h1>
+        </h1>
         <p class="tracks-header" id="total-songs">total number of songs:
-            <?php 
-        require'../server/song.php';
-        echo $playlistLength;
-        ?></p>
+        </p>
         <div id="playlist-container">
-            <ul id="playlist-tracks"><?php echo songs($playlist,$playlistLength) ?></ul>
+            <ul id="playlist-tracks"><?php require '../server/song.php' ?></ul>
         </div>
     </section>
     <section id="music-section">
         <div id="music-info">
-            <p class="music-p">Title: 
+            <p class="music-p">Title:
             </p>
 
             <p class="music-p"> Length:</p>

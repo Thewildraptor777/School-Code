@@ -1,20 +1,19 @@
 <?php
 require 'playlist.php';
 //$music["playlists"][0]["tracks"][0]["name"]
-$index=1;
-$playlist = $music['playlists'][$index];
-$playlistLength = count($playlist["tracks"]);if (!function_exists('songs')) {
-    function songs($playlist, $length)
-    {
-        for ($i = 0; $i < $length; $i++) {
+for ($index = 0; $index < count($music['playlists']); $index++) {
+        $playlist = $music['playlists'][$index];
+        echo $playlist['name'];
+        $playlistLength = count($playlist["tracks"]);
+
+        for ($i = 0; $i < $playlistLength; $i++) {
             echo "<li>" . "<div>"
                 . $playlist['tracks'][$i]['name']
-                ."<br>"
+                . "<br>"
                 . $playlist['tracks'][$i]['audio']
-                ."<br>"
+                . "<br>"
                 . $playlist['tracks'][$i]['image']
-                ."<br>"
+                . "<br>"
                 . "</div>" . "</li>";
         }
     }
-}
